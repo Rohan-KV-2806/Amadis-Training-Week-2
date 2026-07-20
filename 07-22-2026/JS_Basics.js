@@ -1,5 +1,5 @@
 // Variables
-
+"use strict";
 let name = "Rohan";
 let age = 22;
 let alive = true;
@@ -42,7 +42,4 @@ console.log(c == d);
 console.log(c != d);
 console.log(c === d);
 console.log(c !== d);
-
-
-
 
