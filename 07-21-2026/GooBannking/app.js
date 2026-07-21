@@ -20,3 +20,30 @@ function login(){
     }
 }
 
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name");
+const balance = params.get("balance");
+document.getElementById("WelcomeMsg").textContent = "Welcome " + name;
+document.getElementById("YourBalance").textContent = "Your current balance is " + balance + " Rupees";
+
+
+function withdraw(){
+    const amount = prompt("Enter amount to withdraw:");
+
+    if(amount && !isNaN(amount) && amount > 0){
+        const withdrawAmount = Number(amount);
+
+        if(withdrawAmount <= users[name].balance){
+            users[name].balance -= withdrawAmount;
+
+            document.getElementById("YourBalance").textContent =
+                "Your current balance is " + users[name].balance + " Rupees";
+
+            alert("Withdrawal successful! New balance: ₹" + users[name].balance);
+        } else {
+            alert("Insufficient balance!");
+        }
+    } else {
+        alert("Please enter a valid amount");
+    }
+}

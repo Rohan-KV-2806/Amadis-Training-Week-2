@@ -16,12 +16,9 @@
     <div>
         <h2 id="YourBalance"> </h2>
     </div>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const name = params.get("name");
-        const balance = params.get("balance");
-        document.getElementById("WelcomeMsg").textContent = "Welcome " + name;
-        document.getElementById("YourBalance").textContent = "Your current balance is " + balance + " Rupees";
-    </script>
+    <div>
+        <button onclick="withdraw()"> Withdraw</button>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
