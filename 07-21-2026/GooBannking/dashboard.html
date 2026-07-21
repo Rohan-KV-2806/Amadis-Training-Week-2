@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GooBannking</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to GooBannking</h1>
+    </header>
+    <div>
+        <h2 id="WelcomeMsg"> </h2>
+    </div>
+    <br>
+    <div>
+        <h2 id="YourBalance"> </h2>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+        const balance = params.get("balance");
+        document.getElementById("WelcomeMsg").textContent = "Welcome " + name;
+        document.getElementById("YourBalance").textContent = "Your current balance is " + balance + " Rupees";
+    </script>
+</body>
+</html>
