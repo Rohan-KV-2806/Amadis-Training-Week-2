@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+</head>
+<body>
+    <label for="task">Enter a task</label>
+    <input type="text" name="task" id="tsk">
+    <button onclick="get_task()">Add task</button>
+    <br>
+    <ul id="tasks">
+
+    </ul>
+    <script>
+        function get_task() {
+            let parent = document.getElementById("tasks"); 
+
+            let task = document.getElementById("tsk").value;
+
+            let li = document.createElement("li");
+            let bn = document.createElement("button");
+
+            li.innerText = task;
+
+            bn.innerText = "Delete";
+
+            bn.onclick = function () {
+                parent.removeChild(li);
+            };
+
+            li.appendChild(bn);
+
+            parent.appendChild(li);
+        }
+    </script>
+</body>
+</html>
