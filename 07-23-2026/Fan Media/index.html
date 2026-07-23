@@ -16,10 +16,20 @@
     </nav>
     <br>
     <div class="posts">
-        <h1></h1>
     </div>
+    <br>
+
+        <h1 id="user_welcome"></h1>
+        <br>
     <footer>
         <h2>FAN media by Rohan</h2>
     </footer>
+    <script>
+        const parms = new URLSearchParams(window.location.search);
+        const current_user = parms.get("loggedin_user");
+        console.log(current_user);
+        const to_welcome = document.getElementById("user_welcome");
+        to_welcome.textContent = "welcome " + current_user + "!";
+    </script>
 </body>
 </html>
