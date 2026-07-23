@@ -20,30 +20,20 @@ A mini social media app built with HTML, CSS, and JavaScript.
 | Dashboard | `index.html` |
 | Create Post | `post.html` |
 
-## Directory Structure
-
 FAN Media/
-
-├── index.html # Dashboard — view & like posts
-
-├── login.html # Login form
-
-├── signup.html # Signup form
-
-├── post.html # Create a new post
-
+│
+├── index.html
+├── login.html
+├── signup.html
+├── post.html
+│
 ├── styles/
-
-│ ├── auth.css # Shared auth/post page styles
-
-│ └── dashboard.css # Dashboard-specific styles
-
+│   ├── auth.css
+│   └── dashboard.css
+│
 └── scripts/
-
-├── auth.js # Signup & login logic
-
-├── dashboard.js # Post feed & likes
-
-└── post.js # Post creation & storage
+    ├── auth.js
+    ├── dashboard.js
+    ├── post.js
 
 > **CSS is added by AI**
