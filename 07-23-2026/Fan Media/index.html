@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAN Media Dashboard</title>
+    <title>FAN Media - Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
 </head>
 <body>
     <header>
         <h1>FAN Media</h1>
     </header>
-    <br>
-    <nav>
-        <a href="post.html">Post</a>
-        <a href="logout.html">Logout</a>
-    </nav>
-    <br>
-    <div class="posts">
-    </div>
-    <br>
 
-        <h1 id="user_welcome"></h1>
-        <br>
+    <h2 id="user_welcome"></h2>
+
+    <nav class="toolbar">
+        <a id="postLink" href="#">✏️ Post</a>
+        <a href="login.html" class="logout">🚪 Logout</a>
+    </nav>
+
+    <div class="posts"></div>
+
     <footer>
         <h2>FAN media by Rohan</h2>
     </footer>
-    <script>
-        const parms = new URLSearchParams(window.location.search);
-        const current_user = parms.get("loggedin_user");
-        console.log(current_user);
-        const to_welcome = document.getElementById("user_welcome");
-        to_welcome.textContent = "welcome " + current_user + "!";
-    </script>
+
+    <script src="scripts/dashboard.js"></script>
 </body>
 </html>

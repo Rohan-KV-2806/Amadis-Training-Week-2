@@ -1,0 +1,170 @@
+/* ===== BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border: 2px solid #ddd;
+    text-align: center;
+    padding: 16px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+header h1 {
+    font-size: 24px;
+    color: #007bff;
+    letter-spacing: 1px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    border: 2px solid #ddd;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: auto 20px 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-size: 14px;
+    color: #888;
+}
+
+footer h2 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* ===== FORM CONTAINER ===== */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 28px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== LABELS ===== */
+.form-box label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+    align-self: flex-start;
+}
+
+/* ===== INPUTS ===== */
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 11px 12px;
+    margin-bottom: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    background-color: #fafafa;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.12);
+    outline: none;
+    background-color: #fff;
+}
+
+.form-box textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* ===== BUTTON ===== */
+.form-box button,
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.1s;
+    font-family: inherit;
+}
+
+.form-box button:hover,
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-box button:active,
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* ===== AUTH NAVIGATION LINKS ===== */
+.auth-links {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto 0;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.back-link:hover {
+    background-color: #e8e8e8;
+    color: #333;
+}

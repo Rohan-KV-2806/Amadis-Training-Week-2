@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAN Media create post</title>
+    <title>FAN Media - Create Post</title>
+    <link rel="stylesheet" href="styles/auth.css">
 </head>
 <body>
     <header>
         <h1>FAN Media</h1>
     </header>
-    <br>
+
+    <div class="form-box">
+        <label for="ps">What's on your mind?</label>
+        <textarea name="post_content" id="ps" rows="4" placeholder="Write something..."></textarea>
+        <button onclick="post()">📤 Post</button>
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+    </div>
+
     <footer>
         <h2>FAN media by Rohan</h2>
     </footer>
+
+    <script src="scripts/post.js"></script>
 </body>
 </html>
